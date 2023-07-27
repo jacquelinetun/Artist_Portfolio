@@ -1,0 +1,78 @@
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+}
+#bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    background-size: cover;
+}
+.container{
+    width: 500px;
+    margin: 150px auto;
+    /*border: 2px solid black;*/
+    font-family: arial;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+    height: auto;
+    transition: all .5s;
+}
+.container:hover img{
+    transform: scale(1.09);
+}
+.container .about{
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: justify;
+    height: 100%;
+    color: white;
+    box-sizing: border-box;
+    transition: all .9s;
+}
+.about h3{
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid #808080;
+    padding: 0 10px 20px 10px;
+}
+.about p{
+    padding: 0px 20px 15px 20px;
+    border-bottom: 1px solid #808080;
+}
+.container .icons{
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    padding: 0 130px 10px 205px;
+    position: absolute;
+    cursor: pointer;
+    bottom: -100%;
+    transition: all .5s .2s;
+}
+.icons i{
+    margin: 0 10px;
+    transition: all .5s;
+}
+.icons i:hover{
+    color: #00acee;
+}
+.container:hover .icons{
+    bottom: 0;
+}
+.container:hover .about{
+    top: 0;
+}
